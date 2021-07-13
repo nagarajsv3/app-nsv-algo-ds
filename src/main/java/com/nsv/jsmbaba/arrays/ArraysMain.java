@@ -1,4 +1,4 @@
-package arrays;
+package com.nsv.jsmbaba.arrays;
 
 public class ArraysMain {
 

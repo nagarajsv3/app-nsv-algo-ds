@@ -1,6 +1,6 @@
-package bubblesort;
+package com.nsv.jsmbaba.bubblesort;
 
-public class BubbleSortMain {
+public class BubbleSortAscMain {
 
     public static void main(String[] args) {
 
