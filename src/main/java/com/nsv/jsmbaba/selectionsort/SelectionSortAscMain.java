@@ -26,6 +26,12 @@ public class SelectionSortAscMain {
     }
 
     private static void swap(int[] numbers, int i, int j) {
+
+        //Converts Selection Sort from Unstable Sort to Stable Sort
+        if(numbers[i] == numbers[j]){
+            return;
+        }
+
         int temp = numbers[i];
         numbers[i] = numbers[j];
         numbers[j] = temp;
