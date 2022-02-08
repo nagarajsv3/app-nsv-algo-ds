@@ -4,28 +4,38 @@ public class ArraysMain {
 
     public static void main(String[] args) {
 
-        int[] intArray = new int[7];
+        int[] numbers=new int[7];
 
-        intArray[0] = 5;
-        intArray[1] = -10;
-        intArray[2] = 30;
-        intArray[3] = 6;
-        intArray[4] = -6;
-        intArray[5] = 40;
-        intArray[6] = 40;
+        numbers[0] = 21;
+        numbers[1] = -10;
+        numbers[2] = 30;
+        numbers[3] = -20;
+        numbers[4] = 40;
+        numbers[5] = 8;
+        numbers[6] = 9;
 
-        int index = -1;
-        for (int i = 0; i < intArray.length; i++) {
-            System.out.println("iteration="+i+";Value="+intArray[i]);
+        System.out.println("Time Complexity : Retrieval when we know the index : O(1) : Constant Time Complexity ");
 
-            if(intArray[i] ==30){
-                index=i;
+        int searchElemIndex = -1;
+        for (int index=0; index < numbers.length ; index++){
+            System.out.println(numbers[index]);
+
+            if(numbers[index] == 9){
+                searchElemIndex = index;
                 break;
             }
 
         }
+        System.out.println("******************");
+        System.out.println("searchElemIndex="+searchElemIndex);
+        System.out.println("Time Complexity : Retrieval when we dont know the index : O(n) : Linear Time Complexity ");
+        System.out.println("Time Complexity : Retrieval when we need to search for an element : O(n) : Linear Time Complexity ");
+        System.out.println("Time Complexity : Add an element to the full array : O(n) : Linear Time Complexity ");
+        System.out.println("Time Complexity : Add an element to the end of the array : O(1) : Constant Time Complexity ");
+        System.out.println("Time Complexity : Insert / Update / Delete an element at an specific index : O(1) : Constant Time Complexity ");
+        System.out.println("Time Complexity : Delete an element by shifting elements : O(n) : Linear Time Complexity ");
 
-        System.out.println("index="+index);
+
 
     }
 }
